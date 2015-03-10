@@ -1,0 +1,41 @@
+== BEGIN GENERAL INFORMATION ==
+Permissions:
+  xblaze.mb.opaque - Player is Always Visible. ('cept when they vanish)
+  xblaze.mb.dropshift - Player can Shift Click their magic band away.
+  xblaze.mb.ignorechat - Player can say things that others cannot. (My magic band is broken)
+Commands:
+  /mb - Retrieves a Magic Band. (Already given on join, command is fallback)
+  /fetchtime - Retrieves the internal server time from the server.
+  /room - (Invisible w/o Permission to use) Allows configuration of hotel rooms
+  /xblaze /blaze /xblazetech /blazetech /hotels /magicband - All of these will display informative message.
+  /easteregg - Secret command... shhh (Just sends a friendly message to the player!)
+  
+Chat Catchers:
+  GUests are not able to say things that match these regexes
+  (If they do then their magic band will be replaced.)
+    ".*magic.*band.*work.*"
+    ".*magicband.*work.*"
+    ".*magicband.*broken.*"
+    ".*magic.*band.*broken.*"
+== END GENERAL INFORMATION ==
+== BEGIN TECHNICAL INFORMATION ==
+Player-Meta:
+  xblaze-iso:
+    - This is "True" if the player cannot see others.
+    - This is NOT SET if the player can see others.
+  xblaze-dev:
+    - This is "True" if the player is debugging.
+    - This is NOT SET if the player is not debugging.
+  xblaze-rap:
+    - This is "True" if the player is adding a single room.
+    - This is NOT SET if the player is not adding a room.
+  xblaze-rar:
+    - This is "True" if the player is adding multiple rooms.
+    - This is NOT SET if the player is not adding rooms.
+  xblaze-hotel:
+    - When adding room(s), this denotes the name of the hotel.  
+  xblaze-room:
+    - When adding room(s), this denotes the room of the hotel.
+  xblaze-cost:
+    - When adding room(s), this denotes the cost of the room.
+== END TECHNICAL INFORMATION ==
